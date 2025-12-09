@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Quiz do Davi</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'JetBrains Mono', monospace;
+        background: #0d0d0d;
+        color: #33c583;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    h1 {
+        text-shadow: 0 0 8px #33c583, 0 0 15px #33c583;
+    }
+
+    .pergunta {
+        margin-top: 20px;
+        padding: 15px;
+        border: 2px solid #33c583;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #33c583;
+        width: 300px;
+    }
+
+    input[type="button"] {
+        margin-top: 15px;
+        padding: 10px 18px;
+        border: 1px solid #33c583;
+        background-color: #0d0d0d;
+        color: #33c583;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    input[type="button"]:hover {
+        background-color: #33c583;
+        color: #0d0d0d;
+        box-shadow: 0 0 10px #33c583;
+    }
+
+    #resultado {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Quiz básico sobre DEV</h1>
+
+
+<div class="pergunta">
+    <p>1) Qual TAG deixa o texto em negrito?</p>
+    <input type="radio" name="q1" value="errado"> &lt;div&gt;<br>
+    <input type="radio" name="q1" value="certo"> &lt;strong&gt;<br>
+    <input type="radio" name="q1" value="errado"> &lt;br&gt;<br>
+</div>
+
+<div class="pergunta">
+    <p>2) Qual dessas ferramentas mexe com a página usando DOM?</p>
+    <input type="radio" name="q2" value="errado"> CSS<br>
+    <input type="radio" name="q2" value="certo"> JavaScript<br>
+    <input type="radio" name="q2" value="errado"> HTML puro<br>
+</div>
+
+<div class="pergunta">
+    <p>3) Qual a função certa para pegar um elemento por ID?</p>
+    <input type="radio" name="q3" value="errado"> getMyElementPls()<br>
+    <input type="radio" name="q3" value="errado"> selectAll()<br>
+    <input type="radio" name="q3" value="certo"> document.getElementById()<br>
+</div>
+
+<div class="pergunta">
+    <p>4) Em CSS, qual propriedade muda a cor do texto?</p>
+    <input type="radio" name="q4" value="certo"> color<br>
+    <input type="radio" name="q4" value="errado"> background<br>
+    <input type="radio" name="q4" value="errado"> display<br>
+</div>
+
+<div class="pergunta">
+    <p>5) O que o innerHTML faz?</p>
+    <input type="radio" name="q5" value="errado"> Troca a fonte da página<br>
+    <input type="radio" name="q5" value="certo"> Altera o conteúdo dentro de um elemento<br>
+    <input type="radio" name="q5" value="errado"> Altera o código inteiro<br>
+</div>
+
+<div class="pergunta">
+    <p>6) Em CSS, qual unidade é relativa ao tamanho da fonte do elemento?</p>
+    <input type="radio" name="q6" value="errado"> px<br>
+    <input type="radio" name="q6" value="certo"> em<br>
+    <input type="radio" name="q6" value="errado"> km<br>
+</div>
+
+<div class="pergunta">
+    <p>7) Qual evento dispara quando clicamos em um botão?</p>
+    <input type="radio" name="q7" value="errado"> onhover<br>
+    <input type="radio" name="q7" value="certo"> onclick<br>
+    <input type="radio" name="q7" value="errado"> onexplode<br>
+</div>
+
+<div class="pergunta">
+    <p>8) Em JavaScript, qual símbolo é usado para comentários de linha?</p>
+    <input type="radio" name="q8" value="certo"> // comentário<br>
+    <input type="radio" name="q8" value="errado">&lt;!-- comentário --&gt;<br>
+    <input type="radio" name="q8" value="errado"> ##comentário<br>
+</div>
+
+<div class="pergunta">
+    <p>9) Qual dessas é uma estrutura de condição?</p>
+    <input type="radio" name="q9" value="errado"> for<br>
+    <input type="radio" name="q9" value="certo"> if<br>
+    <input type="radio" name="q9" value="errado"> return<br>
+</div>
+
+<div class="pergunta">
+    <p>10) Qual desses tipos NÃO existe em JavaScript?</p>
+    <input type="radio" name="q10" value="errado"> number<br>
+    <input type="radio" name="q10" value="errado"> boolean<br>
+    <input type="radio" name="q10" value="certo"> integer<br>
+</div>
+
+<div class="pergunta">
+    <p>11) Qual TAG é usada para criar um link?</p>
+    <input type="radio" name="q11" value="certo"> &lt;a&gt;<br>
+    <input type="radio" name="q11" value="errado"> &lt;link&gt;<br>
+    <input type="radio" name="q11" value="errado"> &lt;href&gt;<br>
+</div>
+
+<div class="pergunta">
+    <p>12) Qual propriedade muda a cor do fundo?</p>
+    <input type="radio" name="q12" value="errado"> color<br>
+    <input type="radio" name="q12" value="certo"> background-color<br>
+    <input type="radio" name="q12" value="errado"> backdrop<br>
+</div>
+
+<div class="pergunta">
+    <p>13) O que significa DOM?</p>
+    <input type="radio" name="q13" value="certo"> Document Object Model<br>
+    <input type="radio" name="q13" value="errado"> Digital Object Memory<br>
+    <input type="radio" name="q13" value="errado"> Document Online Manager<br>
+</div>
+
+<div class="pergunta">
+    <p>14) Como declarar uma variável usando JavaScript moderno?</p>
+    <input type="radio" name="q14" value="errado"> varíavel<br>
+    <input type="radio" name="q14" value="certo"> let<br>
+    <input type="radio" name="q14" value="errado"> define<br>
+</div>
+
+<div class="pergunta">
+    <p>15) Qual TAG representa um título?</p>
+    <input type="radio" name="q15" value="errado"> &lt;p&gt;<br>
+    <input type="radio" name="q15" value="errado"> &lt;title&gt;<br>
+    <input type="radio" name="q15" value="certo"> &lt;h1&gt;<br>
+</div>
+
+<div class="pergunta">
+    <p>16) Qual função converte texto para número?</p>
+    <input type="radio" name="q16" value="certo"> Number()<br>
+    <input type="radio" name="q16" value="errado"> toNum()<br>
+    <input type="radio" name="q16" value="errado"> convertNumber()<br>
+</div>
+
+<div class="pergunta">
+    <p>17) Em CSS, qual deixa algo no centro da tela (dentro de um flex)?</p>
+    <input type="radio" name="q17" value="certo"> justify-content: center;<br>
+    <input type="radio" name="q17" value="errado"> align-magic: middle;<br>
+    <input type="radio" name="q17" value="errado"> float: center;<br>
+</div>
+
+<div class="pergunta">
+    <p>18) O que significa o símbolo == em JavaScript?</p>
+    <input type="radio" name="q18" value="certo"> Compara valores (sem comparar tipo)<br>
+    <input type="radio" name="q18" value="errado"> Atribuição<br>
+    <input type="radio" name="q18" value="errado"> Compara valores e tipos<br>
+</div>
+
+<div class="pergunta">
+    <p>19) Qual é a forma correta de criar um comentário em CSS?</p>
+    <input type="radio" name="q19" value="errado"> // comentário<br>
+    <input type="radio" name="q19" value="certo"> /* comentário */<br>
+    <input type="radio" name="q19" value="errado"> # comentário #<br>
+</div>
+
+<div class="pergunta">
+    <p>20) Qual comando mostra algo no console?</p>
+    <input type="radio" name="q20" value="certo"> console.log()<br>
+    <input type="radio" name="q20" value="errado"> print()<br>
+    <input type="radio" name="q20" value="errado"> show.console()<br>
+</div>
+
+
+<input type="button" value="Finalizar Quiz" onclick="finalizar()">
+
+
+<div id="resultado"></div>
+
+<script>
+function finalizar() {
+    let pontos = 0;
+
+    for (let i = 1; i <= 20; i++) {
+        let resposta = document.querySelector(`input[name="q${i}"]:checked`);
+        if (resposta && resposta.value === "certo") pontos++;
+    }
+
+    const resultado = document.getElementById("resultado");
+
+    if (pontos === 20) {
+        resultado.innerHTML = "PERFEITO! Você destruiu esse quiz, (usando chatgpt até eu)";
+    } else if (pontos >= 3) {
+        resultado.innerHTML = "Mandou muito! Só estudar mais e você consegue na próxima.";
+    } else {
+        resultado.innerHTML = "Rapaz... melhor voltar pro VSCode e treinar.";
+    }
+}
+</script>
+
+</body>
+</html>
